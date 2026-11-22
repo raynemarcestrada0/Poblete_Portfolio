@@ -1,235 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio — Home & Assessments</title>
-
-  <style>
-    :root {
-      --bg: #0f172a;
-      --panel: #111827;
-      --accent: #6366f1;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --success: #10b981;
-      --danger: #ef4444;
-      --card: #1f2937;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: linear-gradient(180deg, #0b1220 0%, var(--bg) 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .muted { color: var(--muted); }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(99, 102, 241, 0.2);
-    }
-
-    .nav {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .brand { font-weight: 700; }
-
-    .nav a {
-      margin-left: 16px;
-      font-weight: 600;
-      color: var(--text);
-      opacity: 0.9;
-    }
-
-    .nav a:hover { opacity: 1; color: #fff; }
-
-    section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 56px 20px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 28px;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 44px;
-      margin: 0 0 12px;
-    }
-
-    .hero p {
-      color: var(--muted);
-      margin: 0 0 20px;
-      font-size: 18px;
-    }
-
-    .cta {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid rgba(99,102,241,0.35);
-      background: linear-gradient(180deg, rgba(99,102,241,0.25), rgba(99,102,241,0.12));
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 10px;
-      font-weight: 700;
-      cursor: pointer;
-      text-decoration: none;
-      transition: .2s;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(99,102,241,0.25);
-    }
-
-    .btn.secondary {
-      border-color: rgba(156,163,175,0.35);
-      background: linear-gradient(180deg, rgba(31,41,55,0.7), rgba(17,24,39,0.7));
-    }
-
-    .card {
-      background: linear-gradient(180deg, rgba(31,41,55,0.9), rgba(17,24,39,0.9));
-      border: 1px solid rgba(99,102,241,0.2);
-      border-radius: 14px;
-      padding: 20px;
-      transition: .2s;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 50px rgba(0,0,0,0.35);
-    }
-
-    .grid {
-      display: grid;
-      gap: 18px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .pill {
-      display: inline-block;
-      font-size: 12px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(156,163,175,0.35);
-      color: var(--muted);
-      margin-right: 8px;
-    }
-
-    footer {
-      padding: 28px 20px 56px;
-      text-align: center;
-      color: var(--muted);
-    }
-
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 34px; }
-    }
-    .profile {
-  text-align: left;
-}
-
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid var(--accent);
-  margin-bottom: 16px;
-  box-shadow: 0 8px 24px rgba(99,102,241,0.3);
-}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yrish Anne Magalang | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="hero">
+    <h1>Yrish Anne Magalang</h1>
+    <p>Student Portfolio &amp; Projects</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <nav class="nav">
-    <div class="brand">My Portfolio</div>
-    <div>
-      <a href="#home">Home</a>
-      <a href="#quiz">Assessments</a>
-    </div>
-  </nav>
-</header>
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Write a short introduction about your background, skills, and goals here.</p>
+    </section>
 
-<section id="home">
-  <div class="hero">
-    <div>
-      <div class="profile">
-      <img src="" alt="Reyes.jpg" class="Reyes.jpg">
-      <h1>Hi, I’m Yrish Anne Magalang — BSIT- 1A</h1>
-      <p>
-        I build clean, accessible web experiences and structured learning tools.
-        Complete quizzes, lab work, and the final exam below.
-      </p>
-      <div class="cta">
-        <a class="btn" href="#quiz">Go to Assessments</a>
-      </div>
-    </div>
+    <section id="projects" class="card">
+      <h2>Projects &amp; Activities</h2>
+      <ul>
+        <li><strong>Project 1:</strong> Short description of your work.</li>
+        <li><strong>Project 2:</strong> Short description of your work.</li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <h3 style="margin-top:0;">Skills</h3>
-      <p class="pill">HTML</p>
-      <p class="pill">CSS</p>
-      <p class="pill">Java</p>
-      
-    </div>
-  </div>
-</section>
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+    </section>
+  </main>
 
-<section id="quiz">
-  <h2 style="margin-top:0;">Assessments</h2>
-  <p class="muted">Complete quizzes and lab work before attempting the final exam.</p>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Quiz 1</h3>
-      <p>HTML Basics & Structure</p>
-      <div>
-        <span class="pill">10 Questions</span>
-        <span class="pill">Beginner</span>
-      </div>
-      <div style="margin-top:14px;">
-        <a cla
-
-
-
-
-
-
-      
+  <footer>
+    <p>&copy; 2026 Yrish Anne Magalang</p>
+  </footer>
+</body>
+</html>
